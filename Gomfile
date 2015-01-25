@@ -1,0 +1,16 @@
+gom 'github.com/jlaffaye/ftp', :commit => 'fec71e62e457557fbe85cefc847a048d57815d76'
+gom 'github.com/smira/go-ftp-protocol/protocol', :commit => '066b75c2b70dca7ae10b1b88b47534a3c31ccfaa'
+gom 'github.com/ugorji/go/codec', :commit => '71c2886f5a673a35f909803f38ece5810165097b'
+gom 'github.com/vaughan0/go-ini', :commit => 'a98ad7ee00ec53921f08832bc06ecf7fd600e6a1'
+gom 'github.com/wsxiaoys/terminal/color', :commit => '5668e431776a7957528361f90ce828266c69ed08'
+
+group :test do
+    gom 'gopkg.in/check.v1'
+end
+
+group :development do
+   gom 'github.com/golang/lint/golint'
+   gom 'github.com/mattn/goveralls'
+   gom 'github.com/axw/gocov/gocov'
+   gom 'golang.org/x/tools/cmd/cover'
+end
